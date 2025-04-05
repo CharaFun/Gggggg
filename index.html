@@ -2,13 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Учу JS день один</title>
+    <title>Мой сайт</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Как дела?</h1>
-    <p id="text">нажми сюда</p>
-    <button onclick="changeText()">нажми</button>
+    <header>
+        <h1>Добро пожаловать!</h1>
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Главная</h2>
+        <p>Это пример сайта с интерактивностью.</p>
+        <button onclick="showAlert()">Узнай секрет</button>
+    </section>
+    <section id="about">
+        <h2>О нас</h2>
+        <p id="about-text">Мы создаём крутые сайты!</p>
+        <input type="text" id="input" placeholder="Введи текст">
+        <button onclick="updateText()">Обновить</button>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами: <span id="email">example@mail.com</span></p>
+        <button onclick="changeEmail()">Сменить email</button>
+    </section>
+    <footer>
+        <p>&copy; 2023 Мой сайт</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
